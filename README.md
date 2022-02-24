@@ -4,3 +4,16 @@ Basic routines for flutter. They help to build faster the project and to reduce 
 
 ## clean.sh
 
+### command
+
+```
+sh ./clean.sh
+
+```
+### output
+
+```
+sh ./clean.sh
+
+```
+
