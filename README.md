@@ -1,4 +1,4 @@
-# routine_flutter
+# Routine for Flutter
 
 Basic routines for flutter. They help to build faster the project and to reduce the effort spent on typing terminal command.
 
