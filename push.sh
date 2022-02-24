@@ -1,5 +1,5 @@
 
-. ./clean.sh --source-only
+. $PWD/routine_flutter/clean.sh --source-only
 
 git add .
 git commit -m $1

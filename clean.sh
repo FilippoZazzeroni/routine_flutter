@@ -24,7 +24,7 @@ print_current_dir() {
   echo "current directory: $PWD"
 }
 
-
+echo "Cleaning project"
 clean_project
 
 
