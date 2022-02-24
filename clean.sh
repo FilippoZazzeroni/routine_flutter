@@ -1,16 +1,39 @@
 
 
-base_path="/Users/filippozazzeroni/Desktop/auth_view"
-current_path=$PWD
+clean_project() {
+  find $PWD -type f -name "pubspec.yaml" | while read line; do
+    search_for_base_path
+  done
+  search_for_base_path
+}
 
-if [ $current_path != $base_path ]
-then
-  echo "switching directory to $base_path"
-  current_path=$base_path
-  cd $base_path
-fi
+search_for_base_path() {
+  base_path=$line
+  echo "$base_path"
+  if [ -z "$base_path" ]
+    then
+      print_current_dir
+      echo "no files switching directory"
+      cd ..
+      print_current_dir
+      clean_project
+    else
+      flutter clean
+      flutter pub get
+      exit 0
+    fi
+}
 
-echo $current_path
+print_current_dir() {
+  echo "current directory: $PWD"
+}
 
-flutter clean
-flutter pub get
+clean_project
+
+
+
+
+
+
+
+
