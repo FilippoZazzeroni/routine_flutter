@@ -4,13 +4,13 @@ Basic routines for flutter. They help to build faster the project and to reduce 
 
 ## clean.sh
 
-### command
+### command clean.sh
 
 ```
 sh routine_flutter/clean.sh
 
 ```
-### output clean.sh
+### output 
 
 ```
 current directory: /Users/filippozazzeroni/Desktop/auth_view/routine_flutter
