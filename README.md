@@ -1,10 +1,12 @@
 # Routine for Flutter
 
-Basic routines for flutter. They help to build faster the project and to reduce the effort spent on typing terminal command.
+Basic routines for flutter. They help to build faster the project and to reduce the effort spent on typing terminal commands.
 
 ## clean.sh
 
 ### command clean.sh
+
+Clean the current flutter project and gets the dependencies.
 
 ```
 sh routine_flutter/clean.sh
@@ -24,6 +26,8 @@ Running "flutter pub get" in example...
 ```
 
 ### command push.sh
+
+Use clean.sh as first command and then commits and pushes to the specified branch.
 
 ```
 sh routine_flutter/push.sh "commit new files" master 
